@@ -1,6 +1,17 @@
 # Running Qwen3.5 4B Locally on 8GB VRAM (Windows + WSL2)
 
+[![GPU](https://img.shields.io/badge/GPU-RTX_4060_Laptop_8GB-76B900?logo=nvidia&logoColor=white)](#hardware--environment)
+[![VRAM](https://img.shields.io/badge/VRAM_Used-4.3_GB_of_8_GB-blue)](#tldr)
+[![Context](https://img.shields.io/badge/Context-64K-orange)](#tldr)
+[![Speed](https://img.shields.io/badge/Speed-47--60_tok%2Fs-brightgreen)](#tldr)
+[![Backend](https://img.shields.io/badge/Backend-llama.cpp_+_WSL2-lightgrey)](https://github.com/ggml-org/llama.cpp)
+[![Tested](https://img.shields.io/badge/Tested-Oct_2026-informational)](#tldr)
+
+> **Status:** 实测配置记录（tested setup log）。所有数字来自 RTX 4060 Laptop (8 GB) 实机运行，不是估算。
+> 两个反直觉发现：**abliterated 模型不是真无审查**（4 个测试提示拒绝 3 个），**Heretic 才是有效方法**（0 拒绝）。
+
 > Two 4B models at 64K context in ~4.3 GB VRAM, plus a tested answer to "is that uncensored model actually uncensored?"
+ at 64K context in ~4.3 GB VRAM, plus a tested answer to "is that uncensored model actually uncensored?"
 
 **Tested on**: RTX 4060 Laptop (8 GB), Windows 11 + WSL2 Ubuntu, October 2026.
 
