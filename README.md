@@ -11,7 +11,6 @@
 > 两个反直觉发现：**abliterated 模型不是真无审查**（4 个测试提示拒绝 3 个），**Heretic 才是有效方法**（0 拒绝）。
 
 > Two 4B models at 64K context in ~4.3 GB VRAM, plus a tested answer to "is that uncensored model actually uncensored?"
- at 64K context in ~4.3 GB VRAM, plus a tested answer to "is that uncensored model actually uncensored?"
 
 **Tested on**: RTX 4060 Laptop (8 GB), Windows 11 + WSL2 Ubuntu, October 2026.
 
